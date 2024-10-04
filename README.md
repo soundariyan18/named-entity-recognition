@@ -162,7 +162,8 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 
 
 ### Sample Text Prediction
-![Screenshot 2024-10-04 103511](https://github.com/user-attachments/assets/637a5cb8-f065-4d78-b3a2-90400500cd44)
+![Screenshot 2024-10-04 103454](https://github.com/user-attachments/assets/62398f6e-3dec-418b-ad63-12e5c112ecb6)
+
 
 
 
