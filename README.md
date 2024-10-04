@@ -47,8 +47,6 @@ from sklearn.model_selection import train_test_split
 from keras import layers
 from keras.models import Model
 data = pd.read_csv("ner_dataset.csv", encoding="latin1")
-data = pd.read_csv("ner_dataset.csv", encoding="latin1")
-data.head(50)
 data.head(50)
 print("Unique words in corpus:", data['Word'].nunique())
 print("Unique tags in corpus:", data['Tag'].nunique())
@@ -93,10 +91,6 @@ X1 = [[word2idx[w[0]] for w in s] for s in sentences]
 type(X1[0])
 X1[0]
 max_len = 50
-nums = [[1], [2, 3], [4, 5, 6]]
-sequence.pad_sequences(nums)
-nums = [[1], [2, 3], [4, 5, 6]]
-sequence.pad_sequences(nums,maxlen=2)
 X = sequence.pad_sequences(maxlen=max_len,
                   sequences=X1, padding="post",
                   value=num_words-1)
@@ -145,7 +139,6 @@ print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
-
 ```
 
 ## OUTPUT :
